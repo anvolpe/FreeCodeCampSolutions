@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Programming Language Survey</h1>
+    <p id="description">What are your favorite programming languages?</p>
+    <label>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your Name<input required id="name" type="text" placeholder="Name" /></label>
+
+      <label id="email-label">Enter Your E-mail<input required id="email" type="email" placeholder="example@gmail.com" /></label>
+      <label id="number-label">Enter Your Age (14 - 100)<input id="number" type="number" min="14" max="100" placeholder="14"/></label>
+</fieldset>
+      <br>
+      <fieldset>
+      <label for="dropdown">What is your current role?
+    <select id="dropdown" name="dropdown">
+      <option name="select">(select one)</option>
+      <option name="student">student</option>
+      <option name="uni">uni-student</option>
+      <option name="worker">worker</option>
+      <option name="retiree">retiree</option>
+      <option name="other">others</option>
+    </select>
+    </fieldset>
+    <p>Please select your experience level:</p>
+    <fieldset>
+    <div class="radio-group">
+      <label>
+        <input class="inline" type="radio" value="0" name="choice" />Beginner
+      </label>
+      <label>
+        <input class="inline" type="radio" value="1" name="choice" />Intermediate
+      </label>
+      <label>
+        <input class="inline" type="radio" value="2" name="choice" />Advanced
+      </label>
+    </div>
+    </fieldset>
+    <br>
+        <p>Select your favorite languages:</p>
+        <fieldset>
+        <label>
+            <input type="checkbox" value="JavaScript" name="languages" class="inline" /> JavaScript
+        </label>
+        <label>
+            <input type="checkbox" value="Python" name="languages" class="inline" /> Python
+        </label>
+        <label>
+            <input type="checkbox" value="Java" name="languages" class="inline" /> Java
+        </label>
+        <label>
+            <input type="checkbox" value="C" name="languages" class="inline" /> C++
+        </label>
+        <label>
+            <input type="checkbox" value="C" name="languages" class="inline" /> Swift
+        </label>
+        <label>
+            <input type="checkbox" value="C" name="languages" class="inline" /> Rust
+        </label>
+</fieldset>
+
+    <textarea placeholder="Which programming language do you want to learn next and why?"></textarea>
+    <input id="submit" type="submit" value="submit" />
+    </form>
+</body>
+</html>
